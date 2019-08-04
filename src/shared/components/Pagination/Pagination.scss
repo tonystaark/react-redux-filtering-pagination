@@ -1,0 +1,18 @@
+@import '../../../assets/constants.scss';
+
+.container{
+  display:flex;
+  justify-content: center;
+  div{
+    width: 11.11%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    &:hover{color:$primary-color}
+    cursor: pointer;
+    .fa{ font-size: 10px;}
+    &:nth-child(2){
+      color: $primary-color
+    }
+  }
+}

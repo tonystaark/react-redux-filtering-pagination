@@ -1,0 +1,19 @@
+@import './src/assets/constants.scss';
+
+.App {
+  background: #f9f9f9;
+}
+
+.App-Wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 700px;
+}
+
+.found{
+  border-bottom: 1px solid $grey-color;
+  padding: 30px 30px 20px 30px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}

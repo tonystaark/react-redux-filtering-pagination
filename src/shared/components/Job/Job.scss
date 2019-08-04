@@ -1,0 +1,75 @@
+@import '../../../assets/constants.scss';
+
+.job-section{
+  padding: $primary-padding;
+  background-color: #ffffff;
+  font-size:0.9rem;
+  // box-shadow: 0px 10px 10px -7px $grey-color;;
+  .fa {
+    color: $primary-color;
+    padding-right: 10px;
+  }
+
+  .job-inner{
+    display:grid;
+    grid-template-areas: 
+    'header1 header1 header2 header2 header2 header2'
+    'content1 content1 content2 content2 content3 content3'
+    'content4 content4 content5 content5 content6 content6'
+    'footer1 footer2 footer2 footer3 footer3 footer3 '
+    'split split split split split split';
+    grid-gap: 20px;
+    // border-bottom: 1px solid $grey-color;
+    .job-title{
+      grid-area: header1;
+      font-weight: 600;
+    }
+  
+    .job-salary{
+      grid-area: header2;
+      text-align: right;
+      font-weight: 600;
+    }
+  
+    .job-location{
+      grid-area: content1;
+      .fa{padding-right: 20px;}
+    }
+  
+    .job-years{
+      grid-area: content2;
+    }
+  
+    .job-degree{
+      grid-area: content4;
+    }
+  
+    .job-type{
+      grid-area: content5;
+    }
+  
+    .job-logo{
+      img { width: 50px;}
+      grid-area: footer1;
+      align-self: center;
+    }
+    .job-company{
+      grid-area: footer2;
+      align-self: center;
+    }
+    .job-posted{
+      grid-area: footer3;
+      text-align: right;
+      align-self: center;
+      color: $dark-grey;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }  
+
+    .split-line{
+      grid-area: split;
+      border-bottom: 1px solid $grey-color;
+    }
+  }
+  
+}
